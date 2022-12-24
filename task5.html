@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+   <form action="#"> 
+    <fieldset style="background-color: aquamarine;" >
+        <legend> <strong>Contact Details</strong></legend>
+        <table width="500" height="100">
+            <tr>
+                <td><label for="isim">Name </label> </td>
+                <td><input required="required" minlength="3" maxlength="15" autofocus type="text" name="ad" id="isim"  placeholder="Enter the name"/></td>
+            </tr>
+            <tr>
+                <td> <label for="tele"> Telephone </label> </td>
+                <td> <input  type="tel" name="phone" id="tele"  min="3" max="10" placeholder="Enter the phone number"/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email </label> </td>
+                <td><input type="email" name="mail" id="email" placeholder="Enter the emailr"/></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset style="background-color: aquamarine;" width="300px">
+        <legend> <strong> Personal Information</strong></legend>
+        <table width="500" height="100">
+            <tr>
+                <td> <label for="yash" >Age</label></td>
+                <td colspan="6"><input type="number" name="age" id="yash" min="18"></td>
+            </tr>
+           <tr>
+           <td><label for="cins">Gender</label></td>
+            <td>
+                <select name="Gender" id="cins">
+                    <option value=""  disabled selected>Choose gender</option>
+                    <option value="1">man</option>
+                    <option value="1">woman</option>
+                    <option value="1">unspecified</option>
+                </select>
+            </td>
+           </tr>
+           <tr>
+            <td><label for="metn">When did you first know you wanted to be zoo-keeper</label></td>
+            <td><textarea name="" id="metn" cols="30" rows="10">Type in here...</textarea></td>
+           </tr>
+        </table>
+    </fieldset>
+    <fieldset style="background-color: aquamarine;" width="300px">
+        <legend><strong> Pick Your Favorite Animals</strong></legend>
+        <table width="300" height="100">
+            <tr>
+                <td> <label for="Zebr">Zebra</label></td>
+                <td><input type="checkbox" name="zebra" id="Zebr"></td>
+                <td> <label for="kat">Cat</label></td>
+                <td><input type="checkbox" name="Cat" id="kat"></td>
+                
+            </tr>
+            <tr>
+                <td> <label for="Anac">Anaconda</label></td>
+                <td><input type="checkbox" name="Anaconda" id="Anac"></td>
+                <td> <label for="foks">Fox</label></td>
+                <td><input type="checkbox" name="Fox" id="foks"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br />
+    <button type="submit"> <strong>submit</strong></button>
+</form>
+</body>
+
+</html>
